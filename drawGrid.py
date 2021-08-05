@@ -115,7 +115,7 @@ def draw_grid(amount_card, read_file, savefile_name):
         worksheet.write(rownum + 9, colnum + 2, "采集日期", border2)
         worksheet.write(rownum + 9, colnum + 3, "标本概况", border2)
 
-        # 写个编号吧，到时可以用随时注释掉
+        # 写个编号吧，如果不需要可以用随时注释掉
         worksheet.write(rownum, colnum + 3, "第{}张".format(page + 1), align_right)
 
         # 设置样式

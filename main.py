@@ -9,7 +9,7 @@ from tkinter import *
 
 def main():
     # 检查读写文件
-    read_file, save_file = check_file("昆虫86015后2019724_测试.csv", "test4.xlsx")
+    read_file, save_file = check_file(".\\input-file\\昆虫86015后2019724_测试.csv", ".\\output-file\\test4.xlsx")
     # 计算需要多少卡片
     page = count_card(read_file)
     # 画卡片和处理数据

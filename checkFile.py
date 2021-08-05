@@ -1,3 +1,5 @@
+# 文件检查模块，主要用于检查目录下是否存同名文件
+
 def generate_time_stamp():
     """
     生成一个统一的时间戳，用于文件命名
@@ -11,7 +13,7 @@ def generate_time_stamp():
 
 
 def check_file(read_filename: str, save_filename: str):
-    # 文件检查模块，检查目录下是否存同名文件，若存在，则视情况删除
+    # 文件检查函数，检查目录下是否存同名文件，若存在，则视情况删除
     import os
     path = os.getcwd()
     print(f"读取文件<{read_filename}>\n保存文件名为<{save_filename}>\n保存路径为<{path}>")
